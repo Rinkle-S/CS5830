@@ -35,10 +35,10 @@ print("Test accuracy: {:5.2f}%".format(100*acc))
 loss, acc = model2.evaluate(x_train, y_train, verbose=2)
 print("Train accuracy: {:5.2f}%".format(100*acc))
 
+# Save the model2 object to the pickle file
 
 pickle_file = "models/model2.pkl"
 
-# Save the model2 object to the pickle file
 with open(pickle_file, "wb") as f:
     pickle.dump(model2, f)
     print("Model saved to", pickle_file)
