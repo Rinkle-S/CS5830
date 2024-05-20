@@ -86,7 +86,7 @@ async def predict(request: Request, file: UploadFile = File(...)):
     processing_time_gauge.labels(client_ip, input_length, processing_time_per_character).set(total_time)
 
     return {"digit": digit}
-
+#get metrics
 @app.get("/metrics")
 async def metrics():
     return generate_latest()
