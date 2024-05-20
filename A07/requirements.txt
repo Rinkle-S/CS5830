@@ -1,0 +1,7 @@
+fastapi
+Pillow
+numpy
+tensorflow-cpu
+uvicorn
+prometheus-client
+prometheus-fastapi-instrumentator
